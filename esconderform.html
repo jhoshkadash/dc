@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários Condicionais</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <form id="form1">
+    <fieldset>
+      <legend>Escolha uma opção</legend>
+      <label><input type="radio" name="opcao" value="mostrar" onclick="toggleForm()"> Mostrar Formulário</label><br>
+      <label><input type="radio" name="opcao" value="esconder" onclick="toggleForm()"> Esconder Formulário</label>
+    </fieldset>
+  </form>
+
+  <form id="form2" class="hidden">
+    <fieldset>
+      <legend>Formulário Condicional</legend>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome"><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+      <button type="submit">Enviar</button>
+    </fieldset>
+  </form>
+
+  <script>
+    function toggleForm() {
+      const form2 = document.getElementById('form2');
+      const mostrar = document.querySelector('input[name="opcao"][value="mostrar"]').checked;
+      form2.classList.toggle('hidden', !mostrar);
+    }
+  </script>
+</body>
+</html>

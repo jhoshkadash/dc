@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem dos sonhos</title>
+</head>
+<body>
+    <section>
+    <form action="" method="get">
+
+        <fieldset>
+         <legend>Reserva de Viagem <br></legend>
+         <label >Nome</label><br>
+         <input type="text" name="Nome" required placeholder="Ex: Joshua Martins"><br><br>
+         <label >E-mail</label><br>
+         <input type="email" required name="E-mail" placeholder="exemplo@abc.com"><br><br>            
+        </fieldset>
+         <fieldset>
+             <legend for="">Serviços desejados <br></legend>
+             <label for=""><input type="checkbox" name="passagens" value="Passagens" required>Compra de passagens <br></label>
+             <label for=""><input type="checkbox" name="hospedagem" value="Hospedagesm" required>Reserva de Hospedagen <br></label>
+             <label for=""><input type="checkbox" name="veiculos" value="Aluguel de veiculos" required>Aluguel de Veiculos <br></label>
+         </fieldset>
+         
+         <fieldset>
+             <legend>Escolha a forma de pagamento</legend>
+             <label for=""><br><input type="radio" name="formaPagamento" value="Cartão de Crédito" required checked>Cartão de crédito</label>
+             <label for=""><br><input type="radio" name="formaPagamento" value="Boleto" required>Boleto</label>
+             <label for=""><br><input type="radio" name="formaPagamento" value="PIX" required>PIX</label>
+         </fieldset>
+     
+         
+             <fieldset>
+               <legend>Prazo de pagamento</legend>
+               <select name="prazo">
+                 <option value="aVista">A vista</option>
+                 <option value="cincoX">5x sem juros</option>
+                 <option value="dezX" selected>10x com juros</option>                 
+               </select>
+               
+             </fieldset>
+         
+             <br><br>
+             <button type="submit">Salvar</button>
+     
+     </form>
+    </section>
+</body>
+</html>
